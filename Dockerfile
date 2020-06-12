@@ -2,9 +2,6 @@ FROM ubuntu:14.04
 MAINTAINER "kimmanjin <majkim@sgacorp.kr>"
 LABEL "purpose"="practice"
 RUN apt-get update
-RUN apt-get install apache2 -yINTAINER "kimmanjin <majkim@sgacorp.kr>"
-LABEL "purpose"="practice"
-RUN apt-get update
 RUN apt-get install apache2 -y
 #ADD ./test.html /var/www/html
 COPY ./test.html /var/www/html
